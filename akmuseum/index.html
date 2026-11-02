@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#171512" />
+  <meta name="description" content="A private museum, made for one person." />
+  <title>A Museum for K.</title>
+</head>
+<body>
+  <div id="app">
+    <div id="loading">
+      <div class="loading-mark">K</div>
+      <div class="loading-title">A PRIVATE MUSEUM</div>
+      <div class="loading-sub">Preparing your little world…</div>
+    </div>
+    <canvas id="world"></canvas>
+
+    <div id="intro" class="screen">
+      <div class="intro-card">
+        <div class="eyebrow">A PLACE MADE FOR ONE</div>
+        <div class="ornament">✦</div>
+        <h1>A Museum<br><em>for K.</em></h1>
+        <p>A quiet little world of memories, made especially for you.</p>
+        <button id="enter">ENTER THE MUSEUM</button>
+        <div class="intro-foot">BEST EXPERIENCED WITH SOUND</div>
+      </div>
+    </div>
+
+    <div id="hud" class="hidden">
+      <div class="museum-label"><span class="seal">K</span><span>A PRIVATE COLLECTION<br><small>EST. 129</small></span></div>
+      <div class="hud-right">
+        <button id="sound" class="icon-button" aria-label="Toggle sound">♫</button>
+        <button id="view" class="view-button">FIRST PERSON <span>V</span></button>
+      </div>
+      <div id="hint" class="hint hidden">E&nbsp; · &nbsp;EXAMINE</div>
+      <div id="caption" class="caption hidden">
+        <div class="caption-kicker">A MOMENT, PRESERVED</div>
+        <div id="caption-title" class="caption-title"></div>
+        <div id="caption-body" class="caption-body"></div>
+        <button id="close-caption">CLOSE</button>
+      </div>
+      <div id="letter" class="letter hidden">
+        <div class="letter-top">A SMALL DEDICATION</div>
+        <div class="letter-rule"></div>
+        <div class="letter-copy">I adore you<br>And that's how much I am obssessed<br><span>129</span></div>
+        <div class="letter-rule"></div>
+        <button id="close-letter">CLOSE</button>
+      </div>
+      <div class="controls-note">WASD / ARROWS · MOVE &nbsp; | &nbsp; MOUSE / DRAG · LOOK &nbsp; | &nbsp; V · VIEW</div>
+      <div id="mobile-controls" class="hidden">
+        <div id="joystick"><div id="stick"></div></div>
+        <button id="mobile-view">VIEW</button>
+        <button id="mobile-action" class="hidden">EXAMINE</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
